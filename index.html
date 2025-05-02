@@ -23,7 +23,24 @@
     <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
-
+<style>
+    .form-container {
+        background: rgba(255, 255, 255, 0.9);
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .quote-form input, .quote-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .quote-form button {
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+    }
+    </style>
 <body>
 
     <!-- start page-wrapper -->
@@ -136,45 +153,89 @@
                         <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide-2.jpg">
                             <div class="gradient-overlay"></div>
                             <div class="container">
-                                <div class="slide-content">
-                                    <div data-swiper-parallax="300" class="slide-title">
-                                        <h2>Expert Plumbing Service You Can Trust.</h2>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="slide-content">
+                                            <div data-swiper-parallax="300" class="slide-title">
+                                                <h2>Expert Plumbing Service You Can Trust.</h2>
+                                            </div>
+                                            <div data-swiper-parallax="400" class="slide-text">
+                                                <p>When your pipes fail, you need a pro fast. Our licensed plumbers arrive on time and fix it right the first time. Available 24/7 for emergencies.</p>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div data-swiper-parallax="500" class="slide-btns">
+                                                <a href="contact.html" class="btn theme-btn">BOOK ONLINE</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div data-swiper-parallax="400" class="slide-text">
-                                        <p>When your pipes fail, you need a pro fast. Our licensed plumbers arrive on time and fix it right the first time. Available 24/7 for emergencies.</p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div data-swiper-parallax="500" class="slide-btns">
-                                        <a href="contact.html" class="btn theme-btn">BOOK ONLINE</a>
+                                    <div class="col-lg-6">
+                                        <div class="form-container p-4 bg-light rounded">
+                                            <h3 class="mb-3">Request a Quote</h3>
+                                            <div action="submit-quote.php" class="quote-form">
+                                                <div class="mb-3">
+                                                    <input type="text" class="form-control" placeholder="Full Name" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input type="email" class="form-control" placeholder="Email Address" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input type="tel" class="form-control" placeholder="Phone Number" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <textarea class="form-control" rows="4" placeholder="Describe Your Plumbing Issue" required></textarea>
+                                                </div>
+                                                <button type="button" class="btn theme-btn w-100" onclick="alert('Quote submitted! We will contact you soon.')">Submit Quote</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- end slide-inner -->
-                    </div> <!-- end swiper-slide -->
-
+                        </div>
+                    </div>
                     <div class="swiper-slide">
                         <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide-3.jpg">
                             <div class="gradient-overlay"></div>
                             <div class="container">
-                                <div class="slide-content">
-                                    <div data-swiper-parallax="300" class="slide-title">
-                                        <h2>Best Plumbing Services And Affordable Prices!</h2>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="slide-content">
+                                            <div data-swiper-parallax="300" class="slide-title">
+                                                <h2>Best Plumbing Services And Affordable Prices!</h2>
+                                            </div>
+                                            <div data-swiper-parallax="400" class="slide-text">
+                                                <p>Quality plumbing shouldn’t cost a fortune. We offer reliable fixes for leaks, clogs, and broken pipes at fair prices. Serving all of San Diego with honest, upfront pricing.</p>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div data-swiper-parallax="500" class="slide-btns">
+                                                <a href="contact.html" class="btn theme-btn">BOOK ONLINE</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div data-swiper-parallax="400" class="slide-text">
-                                        <p>Quality plumbing shouldn’t cost a fortune. We offer reliable fixes for leaks, clogs, and broken pipes at fair prices. Serving all of San Diego with honest, upfront pricing.</p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div data-swiper-parallax="500" class="slide-btns">
-                                        <a href="contact.html" class="btn theme-btn">BOOK ONLINE</a>
+                                    <div class="col-lg-6">
+                                        <div class="form-container p-4 bg-light rounded">
+                                            <h3 class="mb-3">How Can We HELP!</h3>
+                                            <div action="submit-quote.php" class="quote-form">
+                                                <div class="mb-3">
+                                                    <input type="text" class="form-control" placeholder="Full Name" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input type="email" class="form-control" placeholder="Email Address" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input type="tel" class="form-control" placeholder="Phone Number" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <textarea class="form-control" rows="4" placeholder="Describe Your Plumbing Issue" required></textarea>
+                                                </div>
+                                                <button type="button" class="btn theme-btn w-100" onclick="alert('Quote submitted! We will contact you soon.')">Submit Quote</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- end slide-inner -->
-                    </div> <!-- end swiper-slide -->
+                        </div>
+                    </div>
                 </div>
-                <!-- end swiper-wrapper -->
-
-                <!-- swipper controls -->
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -225,7 +286,7 @@
         <!-- end of wpo-features-section -->
 
         <!-- start wpo-service-section -->
-        <section class="wpo-service-section-s2 section-padding">
+        <section class="wpo-service-section section-padding">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-5">
@@ -239,84 +300,67 @@
                     <div class="col-lg-4 col-md-6 col-12">
                          <div class="wpo-service-item">
                              <div class="wpo-service-img">
-                                 <img src="assets/images/icon/kitchen-utensils.png" alt="">
+                                 <img src="assets/images/kitchenplum.jpg" alt="">
                              </div>
                              <div class="wpo-service-text">
-                                  <h2><a href="service-single.html">Kitchen Plumbing</a></h2>
+                                  <h2><a href="#">Kitchen Plumbing</a></h2>
                                   <p>Expert fixes for sinks, disposals, and dishwashers. We handle leaks, clogs, and installs fast.</p>
                              </div>
-                             <div class="visible-icon">
-                                <img src="assets/images/icon/kitchen-utensils.png" alt="">
-                             </div>
                          </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                          <div class="wpo-service-item">
                              <div class="wpo-service-img">
-                                <img src="assets/images/icon/gas-stove.png" alt="">
+                                 <img src="assets/images/gazplum.jpg" alt="">
                              </div>
                              <div class="wpo-service-text">
-                                  <h2><a href="service-single.html">Gas Line Services</a></h2>
+                                  <h2><a href="#">Gas Line Services</a></h2>
                                   <p>Safe gas line repairs and installations. Certified work for water heaters, stoves, and more.</p>
                              </div>
-                             <div class="visible-icon">
-                                <img src="assets/images/icon/gas-stove.png" alt="">
-                             </div>
                          </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                          <div class="wpo-service-item">
                              <div class="wpo-service-img">
-                                <img src="assets/images/icon/water-tap.png" alt="">
+                                 <img src="assets/images/pipplum.jpg" alt="">
                              </div>
                              <div class="wpo-service-text">
-                                  <h2><a href="service-single.html">Water Line Repair</a></h2>
+                                  <h2><a href="#">Water Line Repair</a></h2>
                                   <p>We fix broken pipes and low pressure issues. Indoor and outdoor water line solutions.</p>
                              </div>
-                             <div class="visible-icon">
-                                <img src="assets/images/icon/water-tap.png" alt="">
+                         </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                         <div class="wpo-service-item">
+                             <div class="wpo-service-img">
+                                 <img src="assets/images/bathplum.jpg" alt="">
+                             </div>
+                             <div class="wpo-service-text">
+                                  <h2><a href="#">Bathroom Plumbing</a></h2>
+                                  <p>Toilets, showers, sinks we repair and install all bathroom fixtures right the first time.</p>
                              </div>
                          </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                          <div class="wpo-service-item">
                              <div class="wpo-service-img">
-                                <img src="assets/images/icon/sink.png" alt="">
+                                 <img src="assets/images/basmentplum.jpg" alt="">
                              </div>
                              <div class="wpo-service-text">
-                                  <h2><a href="service-single.html">Bathroom Plumbing</a></h2>
-                                  <p>Toilets, showers, sinks - we repair and install all bathroom fixtures right the first time.</p>
-                             </div>
-                             <div class="visible-icon">
-                                <img src="assets/images/icon/sink.png" alt="">
-                             </div>
-                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                         <div class="wpo-service-item">
-                             <div class="wpo-service-img">
-                                <img src="assets/images/icon/basement.png" alt="">
-                             </div>
-                             <div class="wpo-service-text">
-                                  <h2><a href="service-single.html">Basement Plumbing</a></h2>
+                                  <h2><a href="#">Basement Plumbing</a></h2>
                                   <p>Specialized solutions for sump pumps, drains, and basement pipe systems.</p>
                              </div>
-                             <div class="visible-icon">
-                                <img src="assets/images/icon/basement.png" alt="">
-                             </div>
                          </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                          <div class="wpo-service-item">
                              <div class="wpo-service-img">
-                                <img src="assets/images/icon/remodeling.png" alt="">
+                                 <img src="assets/images/remodelplum.jpg" alt="">
                              </div>
                              <div class="wpo-service-text">
-                                  <h2><a href="service-single.html">Remodeling Service</a></h2>
+                                  <h2><a href="#">Remodeling Service</a></h2>
                                   <p>Complete plumbing for kitchen/bath remodels. We work with your contractors.</p>
-                             </div>
-                             <div class="visible-icon">
-                                <img src="assets/images/icon/remodeling.png" alt="">
+                                  
                              </div>
                          </div>
                     </div>
@@ -335,8 +379,8 @@
                                     <img src="assets/images/icon/9.png" alt="">
                                 </div>
                                 <div class="info">
-                                    <h3><span class="odometer" data-count="200">00</span></h3>
-                                    <p>Running Project</p>
+                                    <h3><span class="odometer" data-count="6">0</span>+</h3>
+                                    <p>Services</p>
                                 </div>
                             </div>
                             <div class="grid">
@@ -344,8 +388,8 @@
                                     <img src="assets/images/icon/10.png" alt="">
                                 </div>
                                 <div class="info">
-                                    <h3><span class="odometer" data-count="85">00</span>+</h3>
-                                    <p>Team Member</p>
+                                    <h3><span></span>BIG</h3>
+                                    <p>Team</p>
                                 </div>
                             </div>
                             <div class="grid">
@@ -353,7 +397,7 @@
                                     <img src="assets/images/icon/11.png" alt="">
                                 </div>
                                 <div class="info">
-                                    <h3><span class="odometer" data-count="39">00</span>K</h3>
+                                    <h3><span class="odometer" data-count="40">00</span>+</h3>
                                     <p>Happy Clients</p>
                                 </div>
                             </div>
@@ -362,8 +406,8 @@
                                     <img src="assets/images/icon/12.png" alt="">
                                 </div>
                                 <div class="info">
-                                    <h3><span class="odometer" data-count="45">00</span></h3>
-                                    <p>Awards Winning</p>
+                                    <h3><span></span>MANY</h3>
+                                    <p>Locations</p>
                                 </div>
                             </div>
                         </div>
