@@ -4591,7 +4591,7 @@ hero slider
   position: relative;
 }
 .wpo-projects .grid .project-inner .hover-content {
-  background: rgba(0, 82, 218, 0.9);
+  background: rgba(66, 135, 245, 0.5);
   width: 100%;
   height: 100%;
   position: absolute;
